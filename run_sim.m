@@ -1,5 +1,7 @@
-close all
-format long g
+%% DEPRECATED:
+% This was a proof of concept of formulas. We are now using main.m
+% to run this across a range of conditions
+
 %% Transmitter Info
 power_src = 3.3; % watt
 irradiance_ambient = 10; % watt / m^2 Sunlight = 1000
@@ -7,8 +9,7 @@ clock_rate = 15e6; % From IEEE Spec
 wavelength = 600e-9; % 590-610 nm based on Cree Spec
 
 %% Reciever Info
-sampling_rate = 1; % per clock pulse
-sampling_time = 1 / (sampling_rate * clock_rate);
+sampling_time = 1 / clock_rate;
 % With that clock rate, lets use RS(64, 32)
 % which should give us a 6mb/s data rate.
 area = 1e-6; % 1 mm^2
