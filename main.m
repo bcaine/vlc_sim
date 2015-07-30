@@ -10,8 +10,6 @@ wavelength = 600e-9; % 590-610 nm based on Cree Spec
 area = 1e-6; % 1 mm^2
 quantum_efficiency = 0.75; % Generally 50-90%. Not a huge factor
 
-distance = 5; % meters (Transmitter to Reciever)
-
 constants = [clock_rate, wavelength, area, quantum_efficiency];
 %% Vary Power vs Distance
 
