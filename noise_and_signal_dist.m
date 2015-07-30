@@ -4,9 +4,6 @@ wavelength = constants(2);
 area = constants(3);
 quantum_efficiency = constants(4);
 
-% Import util functions
-util;
-
 sampling_time = 1 / clock_rate;
 
 %% Constants
